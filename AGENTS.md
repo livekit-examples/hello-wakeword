@@ -1,10 +1,10 @@
-# CLAUDE.md
+# AGENTS.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
 
-hello-wakeword is a Python wakeword detection project (part of the voice-for-robotics workspace). It uses Python 3.12 and uv workspaces with two members:
+hello-wakeword is a Python wakeword detection project. It uses Python 3.12 and uv workspaces with two members:
 
 - **client/** - TUI wakeword detector (Textual app, LiveKit room client)
 - **agent/** - LiveKit voice agent server

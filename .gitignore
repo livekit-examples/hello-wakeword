@@ -18,6 +18,7 @@ wheels/
 
 # Claude Code
 .claude/
+CLAUDE.md
 
 # IDE
 .vscode/

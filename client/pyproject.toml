@@ -1,0 +1,25 @@
+[project]
+name = "wakeword-client"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "livekit>=1.1.2",
+    "livekit-api>=1.1.0",
+    "livekit-wakeword",
+    "python-dotenv>=1.2.2",
+    "sounddevice>=0.5.5",
+    "soundfile>=0.13.1",
+]
+
+[project.scripts]
+wakeword-client = "client:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel.force-include]
+"client.py" = "client.py"
+"room_session.py" = "room_session.py"
+"models" = "models"
+"sounds" = "sounds"

@@ -6,6 +6,7 @@ dependencies = [
     "livekit>=1.1.2",
     "livekit-api>=1.1.0",
     "livekit-wakeword",
+    "pyaudio>=0.2.14",
     "python-dotenv>=1.2.2",
     "sounddevice>=0.5.5",
     "soundfile>=0.13.1",

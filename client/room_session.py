@@ -122,6 +122,24 @@ class RoomSession:
             lambda reader, pid: asyncio.create_task(_read_agent_events(reader, pid)),
         )
 
+        # Register no-op handlers to suppress "no callback attached" warnings
+        async def _drain_text_stream(reader, _participant_identity):
+            async for _ in reader:
+                pass
+
+        async def _drain_byte_stream(reader, _participant_identity):
+            async for _ in reader:
+                pass
+
+        self._room.register_text_stream_handler(
+            "lk.transcription",
+            lambda reader, pid: asyncio.create_task(_drain_text_stream(reader, pid)),
+        )
+        self._room.register_byte_stream_handler(
+            "lk.agent.session",
+            lambda reader, pid: asyncio.create_task(_drain_byte_stream(reader, pid)),
+        )
+
         # --- Connect and publish mic ---
         await self._room.connect(url, token)
         logger.info("Connected to room: %s", self._room.name)

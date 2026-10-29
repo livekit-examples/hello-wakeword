@@ -3,25 +3,25 @@
 # when an advisory lands; the schedule only applies if version updates are turned on.
 version: 2
 updates:
-  - package-ecosystem: "pip"
+  - package-ecosystem: pip
     directories:
-      - "/agent"
-      - "/client"
+      - /agent
+      - /client
     schedule:
-      interval: "quarterly"
+      interval: quarterly
     open-pull-requests-limit: 0
     groups:
       security:
-        applies-to: "security-updates"
+        applies-to: security-updates
         patterns:
           - "*"
-  - package-ecosystem: "uv"
-    directory: "/"
+  - package-ecosystem: uv
+    directory: /
     schedule:
-      interval: "quarterly"
+      interval: quarterly
     open-pull-requests-limit: 0
     groups:
       security:
-        applies-to: "security-updates"
+        applies-to: security-updates
         patterns:
           - "*"

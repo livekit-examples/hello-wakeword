@@ -5,7 +5,7 @@ description = "Wakeword detection with voice agent"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "livekit-wakeword>=0.1.3",
+    "livekit-wakeword>=2.1.1",
 ]
 
 [tool.uv.workspace]

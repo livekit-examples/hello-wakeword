@@ -5,7 +5,7 @@ requires-python = ">=3.11"
 dependencies = [
     "livekit>=1.1.2",
     "livekit-api>=1.1.0",
-    "livekit-wakeword",
+    "livekit-wakeword>=2.1.1",
     "pyaudio>=0.2.14",
     "python-dotenv>=1.2.2",
     "sounddevice>=0.5.5",

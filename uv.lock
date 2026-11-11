@@ -638,7 +638,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "livekit-wakeword", specifier = ">=0.1.3" }]
+requires-dist = [{ name = "livekit-wakeword", specifier = ">=2.1.1" }]
 
 [[package]]
 name = "hf-xet"
@@ -997,15 +997,15 @@ wheels = [
 
 [[package]]
 name = "livekit-wakeword"
-version = "0.1.3"
+version = "2.1.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "numpy" },
     { name = "onnxruntime" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/64/49/88fb7c46577375947552d154bf54fca784e7798bb34e057dbb031ff74dfa/livekit_wakeword-0.1.3.tar.gz", hash = "sha256:5ff9eda8f36fce1b96572d49cfdfbae26c5e485a310de78dbbcbd51ca47d0cfa", size = 1884749, upload-time = "2026-04-06T07:16:10.035Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/00/84/dfb7b6722310657e2bf88b27aedc39e813ded4743818eff1a83d79052af0/livekit_wakeword-2.1.1.tar.gz", hash = "sha256:0bfb0e65f384d1f42fa43778ee12f33254d563bcbf802885317facbccdf57e9c", size = 55127, upload-time = "2026-11-06T06:48:48.049Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/23/a0/e1a852a5aa2e572929ffe94374b466ffa845ffabd0185d3a0a1dbb101566/livekit_wakeword-0.1.3-py3-none-any.whl", hash = "sha256:6f7bffaaa8f8a7cf321237a36c02b68d2d90459888580bba7b338edb3e8176ff", size = 1900879, upload-time = "2026-04-06T07:16:08.112Z" },
+    { url = "https://files.pythonhosted.org/packages/00/e0/0b9652ac5fde15d9796457b5f623d17e1146e708eceefe58009b51e90a30/livekit_wakeword-2.1.1-py3-none-any.whl", hash = "sha256:d084d51a0c4bc8fb7cdd6c80463b1e9f3490c79eb423ec698de1714a99d37cd1", size = 64872, upload-time = "2026-11-06T06:48:46.679Z" },
 ]
 
 [[package]]
@@ -2228,7 +2228,7 @@ dependencies = [
 requires-dist = [
     { name = "livekit", specifier = ">=1.1.2" },
     { name = "livekit-api", specifier = ">=1.1.0" },
-    { name = "livekit-wakeword" },
+    { name = "livekit-wakeword", specifier = ">=2.1.1" },
     { name = "pyaudio", specifier = ">=0.2.14" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "sounddevice", specifier = ">=0.5.5" },
